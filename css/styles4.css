@@ -1,0 +1,140 @@
+:root {
+  --accent: #5551FF;
+  --accent2: #8E2DE2;
+  --shadow: #ABAAF6;
+}
+
+.hero {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(142, 45, 226, 0.5)), to(rgba(74, 0, 224, 0.6))), url(../images/patron-2.png);
+  background: linear-gradient(90deg, rgba(142, 45, 226, 0.5) 0%, rgba(74, 0, 224, 0.6) 100%), url(../images/patron-2.png);
+  /* background-size: 3.7%; */
+  block-size: 21.875rem;
+  width: 100%;
+}
+
+.wrapper {
+  margin-inline: 115px;
+}
+
+.variant {
+  left: 902px;
+  inline-size: 208px;
+}
+
+h1 {
+  text-align: center;
+  margin-inline: 0;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 71px;
+}
+
+header {
+  left: 902px;
+  inline-size: 208px;
+}
+
+blockquote {
+  inline-size: 633px;
+  margin: auto;
+  margin-block: 64px;
+  text-align: left;
+  border-left: 4px solid var(--accent2);
+}
+
+pre {
+  text-align: left;
+  background-color: var(--white);
+  border: 8px solid var(--accent);
+  -webkit-box-shadow: -10px 10px 0px var(--shadow);
+  box-shadow: -10px 10px 0px var(--shadow);
+  border-radius: 8px;
+}
+
+.section-content {
+  text-align: center;
+  border-left: 4px solid var();
+}
+
+.section-content picture {
+  margin: auto;
+  -webkit-margin-before: 40px;
+  margin-block-start: 40px;
+}
+
+.section-content h3::after {
+  display: none;
+}
+
+.modelBox {
+  text-align: left;
+}
+
+.form input[type="submit"] {
+  background-color: var(--accent);
+}
+
+.form input[type="submit"]:hover {
+  background-color: var(--accent2);
+}
+
+.slider-bullet {
+  background-color: var(--accent2);
+  opacity: 0.5;
+}
+
+.slider-bullet:active,
+.slider-bullet:hover {
+  background-color: var(--accent);
+  opacity: 1;
+}
+
+/* responsive */
+@media screen and (max-width: 767px) {
+  .main-content h1 {
+    font-size: 28px;
+    line-height: 33.18px;
+  }
+
+  .wrapper {
+    margin-inline: 16px;
+  }
+
+  blockquote {
+    inline-size: 100%;
+  }
+
+  blockquote p {
+    line-height: 32px;
+  }
+
+  .hero {
+    block-size: 92px;
+  }
+
+  .variant {
+    display: block;
+    left: 0;
+    width: 100%;
+    padding-inline: 0;
+  }
+
+  .header-content {
+    display: block;
+    position: relative;
+  }
+
+  header {
+    inline-size: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {}
+
+@media screen and (min-width:1440px) {}
